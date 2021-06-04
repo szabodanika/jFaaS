@@ -11,15 +11,15 @@
     <groupId>danielszabo</groupId>
     <artifactId>spring-sqlite-webapp-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-sqlite-webapp-demo</name>
-    <description>Demo project for Spring Boot and SQLite</description>
+    <name>jFaaS</name>
+    <description>Java Function as a Service Web App</description>
 
     <properties>
         <java.version>16</java.version>
     </properties>
 
     <dependencies>
-<!-- Basic Spring librabries we need-->
+        <!-- Basic Spring librabries we need-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -32,7 +32,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!-- SQLite JDBC - it can be removed if you want to use another database-->
+        <!-- SQLite JDBC -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>

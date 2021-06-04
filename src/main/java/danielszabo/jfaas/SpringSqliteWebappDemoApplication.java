@@ -1,4 +1,4 @@
-package danielszabo.springsqlitewebappdemo;
+package danielszabo.jfaas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

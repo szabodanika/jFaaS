@@ -34,34 +34,28 @@
                         Id
                     </th>
                     <th>
-                        Manufacturer
+                        Function
                     </th>
                     <th>
-                        Model
-                    </th>
-                    <th>
-                        Year
+                        Code
                     </th>
                 </tr>
-                <th:block th:each="camera : ${cameras}">
+                <th:block th:each="function : ${functions}">
                     <tr>
-                        <td th:text="${camera.id}"></td>
-                        <td th:text="${camera.manufacturer}"></td>
-                        <td th:text="${camera.model}"></td>
-                        <td th:text="${camera.year}"></td>
+                        <td th:text="${function.id}"></td>
+                        <td th:text="${function.name}"></td>
+                        <td th:text="${function.code}"></td>
                     </tr>
                 </th:block>
             </table>
         </div>
         <div class="col g-4">
-            <h3>New Camera</h3>
-            <form action="#" th:action="@{/}" th:object="${camera}" method="post">
-                <label class="form-label">Manufacturer</label>
-                <input class="form-control" type="text" th:field="*{manufacturer}"/><br>
-                <label class="form-label">Model</label>
-                <input class="form-control" type="text" th:field="*{model}"/><br>
-                <label class="form-label">Year</label>
-                <input class="form-control" type="text" th:field="*{year}"/><br>
+            <h3>New Function</h3>
+            <form action="#" th:action="@{/}" th:object="${function}" method="post">
+                <label class="form-label">Name</label>
+                <input class="form-control" type="text" th:field="*{name}"/><br>
+                <label class="form-label">Function</label>
+                <input class="form-control" type="text" th:field="*{code}"/><br>
                 <input class="btn btn-primary" type="submit" value="Submit"/>
             </form>
         </div>

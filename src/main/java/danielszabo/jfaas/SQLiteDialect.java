@@ -1,4 +1,4 @@
-package danielszabo.springsqlitewebappdemo;
+package danielszabo.jfaas;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
